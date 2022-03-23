@@ -1,5 +1,4 @@
 import numpy as np
-import sys
 import os
 
 #获取数据
@@ -35,9 +34,9 @@ class User:
         self.n = 0
 
 def main():
-    Demand = get_data("./demand.csv")
-    Qos = get_data("./qos.csv")
-    Site_bandwidth = get_data("./site_bandwidth.csv")
+    Demand = get_data("../data/demand.csv")
+    Qos = get_data("../data/qos.csv")
+    Site_bandwidth = get_data("../data/site_bandwidth.csv")
 
     os.makedirs("../output")
     data = open("../output/solution.txt", 'w', encoding="utf-8")
